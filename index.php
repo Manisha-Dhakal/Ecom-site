@@ -1,15 +1,19 @@
-
-<?php               
-include "navbar.php";                 //header
+<?php
+require('top.inc.php');
 ?>
-<div class="slider">                 <!--bg image -->
+<div class="content pb-0">
+	<div class="orders">
+	   <div class="row">
+		  <div class="col-xl-12">
+			 <div class="card">
+				<div class="card-body">
+				   <h4 class="box-title">Dashboard </h4>
+				</div>
+			</div>
+		  </div>
+	   </div>
+	</div>
 </div>
 <?php
- include  "p.php";                 //product list
-?>
-<?php
-//  include  "updated.php";                 //footer
-?>
-<?php
- include  "footer.php";                 //footer
+require('footer.inc.php');
 ?>
