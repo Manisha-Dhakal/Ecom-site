@@ -1,0 +1,72 @@
+<!Doctype html>
+<html lang em="en" dir="1tr">
+<meta charset="utf-8">
+<head>
+	<meta charset="utf-8">
+	<title> PLANTS.BIRATNAGAR</title>
+	<link rel="stylesheet" type="text/css" href="style2.css">
+<script src="https://kit.fontawesome.com/beaccf3494.js" crossorigin="anonymous"></script>
+</head>
+<body>
+	<header>
+		<div class="container">
+			<img src="logo.png" alt="logo" class="logo" width="250px">
+			</div>
+			<nav>
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">About Us</a></li>
+					<li><a href="#">Customer Service</a></li>
+				    <a href="MyAccount.html"
+                    <li><i class="fas fa-user-circle"></i>MyAccount</a></li>
+                    <a href="Cart.html">
+	                <li><i class="fas fa-shopping-cart"></i>Cart &nbsp</a></li></span>
+				</ul>
+			</nav>
+<input type="checkbox" id="check">
+<label for="check">
+<i class="fas fa-bars" id="btn"></i>
+<i class="fas fa-times" id="cancel"></i>
+</label>
+<div class="sidebar">
+<header>Category</header>
+<ul>
+<li><a href="Indoor.html"><i class="fas fa-fan"></i>Indoor</a></li>
+<li><a href="#"><i class="fas fa-bullseye"></i>Outdoor</a></li>
+<li><a href="#"><i class="fas fa-chart-area"></i>Evergreen</a></li>
+<li><a href="#"><i class="fas fa-paint-brush"></i>Flowering Plant</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Wild Flower</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Woody Plant</a></li>
+<li><a href="#"><i class="fas fa-link"></i>Track order</a></li>
+</ul>
+</div>
+<div class="header">
+	<div class="navbar">
+  <div class="search-area">
+    <div class="single-search">
+      <input class="custom-input" type="text" name="" placeholder="What are you looking for ...">
+      <a href="#" class="icon-area"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+</div>
+<div class="row">
+	<div class="col-2 ">
+		<h1><i>Give your plant shopping a new style!!<BR>To Plant A Garden Is To Believe In Tommorow</i></h1>
+		<a href="" class="btm">SHOP NOW! &#8594; </a>
+	</div>
+	<div class="col-1"> 
+		<div id="slideshow">
+	  <div class="slide-wrapper">
+        <div class="slide"><h1 class="slide-number"><img src="cover.png" width="280px"></h1></div>
+        <div class="slide"><h1 class="slide-number"><img src="flower4.jpg"></h1></div>
+        <div class="slide"><h1 class="slide-number"><img src="flower3.jpg"></h1></div>
+        <div class="slide"><h1 class="slide-number"><img src="flower1.jpg" width="1000px"></h1></div>
+        
+      </div>
+    </div>
+</div>
+   </div>
+</div>
+</div>
+</body>
+</html>
