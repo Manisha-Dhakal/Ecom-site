@@ -1,8 +1,6 @@
 <?php
-$id = $_GET['id'];
-echo $id;
 require('top.inc.php');
-$sql="select o.id, o.customer_id, o.grand_total, o.created, o.status, i.order_id, i.product_id, i.quantity from orders o left join order_items i on o.id = i.id where customer_id=$id";
+$sql="select * from customers order by id desc";
 $res=mysqli_query($con,$sql);
 ?>
 <div class="content pb-0">
@@ -21,14 +19,13 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <th class="serial">#</th>
 							   <th>ID</th>
-							   <th>Grand total</th>
-                               <th>Product Id</th>
-							   <th>Customer ID</th>
-							   <th>Order ID</th>
-							   <th>Quantity</th>
+							   <th>FirstName</th>
+                               <th>LastName</th>
+							   <th>Email</th>
+							   <th>Phone</th>
+							   <th>Address</th>
 							   <th>Date</th>
-                               <th>status</th>
-							   <th></th>
+                               <th></th>
 							</tr>
 						 </thead>
 						 <tbody>
@@ -38,14 +35,16 @@ $res=mysqli_query($con,$sql);
 							<tr>
 							   <td class="serial"><?php echo $i?></td>
 							   <td><?php echo $row['id']?></td>
-							   <td><?php echo $row['grand_total']?></td>
-							   <td><?php echo $row['product_id']?></td>
-							   <td><?php echo $row['customer_id']?></td>
-                               <td><?php echo $row['order_id']?></td>
-                               <td><?php echo $row['quantity']?></td>
+							   <td><?php echo $row['first_name']?></td>
+							   <td><?php echo $row['last_name']?></td>
+							   <td><?php echo $row['email']?></td>
+                               <td><?php echo $row['phone']?></td>
+                               <td><?php echo $row['address']?></td>
 							   <td><?php echo $row['created']?></td>
-							   <td><?php echo $row['status']?></td>
-
+							   <?php $link ="order.php";?>
+                               <?php $id = $row["id"];?>
+                               <td><a href="order.php?id=<?php echo $id;?>"<?php echo $link;?>>View order</a></td>
+                               <!-- <td><a href="order.php?id=<?php echo $row["id"];?>">View Order</a> -->
 							
 							</tr>
 							<?php } ?>
@@ -61,6 +60,3 @@ $res=mysqli_query($con,$sql);
 <?php
 require('footer.inc.php');
 ?>
-
-
-
